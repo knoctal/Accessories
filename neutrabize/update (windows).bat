@@ -7,6 +7,8 @@ set "download_dir=C:\neutrabize_temp"
 
 set "neutrabize=C:\neutrabize"
 
+if not exist "%neutrabize%" mkdir "%neutrabize%"
+
 if exist "%neutrabize%" (
     del /q "%neutrabize%\*"
 )

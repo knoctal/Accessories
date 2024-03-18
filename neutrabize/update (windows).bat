@@ -33,7 +33,7 @@ del /q "%download_dir%\neutrabize.zip"
 rmdir /s /q "%download_dir%\neutrabize-main"
 rmdir /s /q "%download_dir%"
 
-echo The Latest 'neutrabize' has been successfully installed.
+echo The latest 'neutrabize' has been successfully installed.
 
 pause
 exit /b 0

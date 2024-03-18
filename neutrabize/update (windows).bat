@@ -15,7 +15,7 @@ if exist "%neutrabize%" (
 
 if not exist "%download_dir%" mkdir "%download_dir%"
 
-echo Downloading latest source code...
+echo Downloading the latest 'neutrabize' source code...
 powershell -command "(New-Object Net.WebClient).DownloadFile('%github_zip_url%', '%download_dir%\neutrabize.zip')"
 
 if not exist "%download_dir%\neutrabize.zip" (
@@ -33,7 +33,7 @@ del /q "%download_dir%\neutrabize.zip"
 rmdir /s /q "%download_dir%\neutrabize-main"
 rmdir /s /q "%download_dir%"
 
-echo Source code has been updated successfully.
+echo The Latest 'neutrabize' has been successfully installed.
 
 pause
 exit /b 0
